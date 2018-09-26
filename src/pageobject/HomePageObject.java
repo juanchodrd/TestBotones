@@ -21,6 +21,7 @@ public class HomePageObject {
 	public PeoplePageObject goToPeoplePage() {
 		driver.get("https://www.linkedin.com/search/results/people/v2/?origin=DISCOVER_FROM_SEARCH_HOME");		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		//scroll
 		jse.executeScript("window.scrollBy(0,250)", "");
 		jse.executeScript("window.scrollBy(0,250)", "");
 		jse.executeScript("window.scrollBy(0,250)", "");

@@ -21,18 +21,13 @@ public class HomePageObject {
 	public PeoplePageObject goToPeoplePage() {
 		driver.get("https://www.linkedin.com/search/results/people/v2/?origin=DISCOVER_FROM_SEARCH_HOME");		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		//scroll2
+		//scroll222222
 		jse.executeScript("window.scrollBy(0,250)", "");
 		jse.executeScript("window.scrollBy(0,250)", "");
 		jse.executeScript("window.scrollBy(0,250)", "");
 		jse.executeScript("window.scrollBy(0,250)", "");		
 		return new PeoplePageObject(driver);
 }
-	private HomePageObject waitForAllButtons(){
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".next-text")));		
-		return new HomePageObject(driver);
-		}
-	
+		
 	
 }
